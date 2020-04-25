@@ -1,0 +1,29 @@
+#about {
+    padding-top: 2.5em;
+    padding-bottom: 25vw;
+
+    #aboutTitle {
+        color: #f7f7f7;
+        width:80%;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    img {
+        width: 100%;
+    }
+
+    #aboutMe {
+        padding-top: 2em;
+        color: #e2e2e2;
+        font-size: 1.3rem;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .rowContent {
+        width:80%;
+        margin: -2% auto;
+        padding: 2em 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
