@@ -1,0 +1,150 @@
+#about {
+  padding-top: 2.5em;
+  padding-bottom: 25vw; }
+  #about #aboutTitle {
+    color: #f7f7f7;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400; }
+  #about img {
+    width: 100%; }
+  #about #aboutMe {
+    padding-top: 2em;
+    color: #e2e2e2;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    display: inline-block; }
+  #about .rowContent {
+    width: 80%;
+    margin: -2% auto;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+body {
+  background: url(../images/aboutBack.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; }
+  body .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease; }
+  body nav {
+    background: rgba(255, 255, 255, 0.3);
+    position: fixed !important;
+    width: 100%;
+    z-index: 5; }
+  body #title {
+    padding-bottom: 25vw; }
+    body #title #titleName {
+      color: #f7f7f7;
+      padding-top: 4.5em;
+      font-weight: 800; }
+    body #title #titleDesc {
+      color: #e2e2e2; }
+
+#art {
+  padding-top: 2.5em;
+  padding-bottom: 25vw; }
+  #art #artTitle {
+    color: #f7f7f7;
+    width: 100%;
+    font-weight: 400; }
+  #art .rowContent {
+    width: 80%;
+    margin: -2% auto;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#photo {
+  padding-top: 2.5em;
+  padding-bottom: 25vw; }
+  #photo #photoTitle {
+    color: #f7f7f7;
+    width: 100%;
+    font-weight: 400; }
+  #photo #decewFalls, #photo #mahtay, #photo #vinyl {
+    padding-top: 3em; }
+  #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
+    top: 25%; }
+  #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3 {
+    top: 35%; }
+  #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
+    position: absolute;
+    color: #e2e2e2;
+    font-size: 2.5rem; }
+  #photo .rowContent {
+    width: 80%;
+    margin: -2% auto;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #photo h3 > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    position: relative; }
+  #photo h3 > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #photo h3 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+
+#cs {
+  padding-top: 2.5em;
+  padding-bottom: 25vw; }
+  #cs #csTitle {
+    color: #f7f7f7;
+    width: 100%;
+    font-weight: 400; }
+  #cs .rowContent {
+    width: 80%;
+    margin: -2% auto;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #cs #csDesc {
+    padding-top: 2em;
+    color: #e2e2e2;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    display: inline-block; }
+  #cs h3 > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    position: relative; }
+  #cs h3 > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  #cs h3 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  #cs img {
+    max-width: 100%; }
+
+/*# sourceMappingURL=portfolio.css.map */
