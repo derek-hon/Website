@@ -111,6 +111,8 @@ body {
     color: #f7f7f7;
     width: 100%;
     font-weight: 400; }
+  #cs #appTitle {
+    color: #c9c9c9; }
   #cs .rowContent {
     width: 80%;
     margin: -2% auto;
@@ -122,29 +124,5 @@ body {
     font-size: 1.3rem;
     vertical-align: middle;
     display: inline-block; }
-  #cs h3 > a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: normal;
-    position: relative; }
-  #cs h3 > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-  #cs h3 > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); }
   #cs img {
     max-width: 100%; }
-
-/*# sourceMappingURL=portfolio.css.map */
