@@ -55,7 +55,7 @@ body {
     font-weight: 400; }
   #art .rowContent {
     width: 80%;
-    margin: -2% auto;
+    margin: auto;
     padding: 2em 1em;
     background-color: rgba(0, 0, 0, 0.5); }
 
@@ -78,7 +78,7 @@ body {
     font-size: 2.5rem; }
   #photo .rowContent {
     width: 80%;
-    margin: -2% auto;
+    margin: auto;
     padding: 2em 1em;
     background-color: rgba(0, 0, 0, 0.5); }
   #photo h3 > a {
@@ -115,7 +115,7 @@ body {
     color: #c9c9c9; }
   #cs .rowContent {
     width: 80%;
-    margin: -2% auto;
+    margin: auto;
     padding: 2em 1em;
     background-color: rgba(0, 0, 0, 0.5); }
   #cs #csDesc {
@@ -130,4 +130,5 @@ body {
 #links .linkFooter {
   background-color: rgba(0, 0, 0, 0.2); }
 #links a {
-  padding-left: 1em; }
+  padding-left: 1em;
+  padding-right: 1em; }
