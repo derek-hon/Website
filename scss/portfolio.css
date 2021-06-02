@@ -127,5 +127,7 @@ body {
   #cs img {
     max-width: 100%; }
 
-#links .linksFooter {
+#links .linkFooter {
   background-color: rgba(0, 0, 0, 0.2); }
+#links a {
+  padding-left: 1em; }
