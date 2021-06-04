@@ -45,6 +45,19 @@ body {
       font-weight: 800; }
     body #title #titleDesc {
       color: #e2e2e2; }
+  body .wrapper {
+    display: flex;
+    width: 100%; }
+  body #sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: rgba(216, 216, 216, 0.849);
+    transition: all 0.3s; }
 
 #art {
   padding-top: 2.5em;
