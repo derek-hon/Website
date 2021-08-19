@@ -22,7 +22,7 @@
     background-color: rgba(0, 0, 0, 0.5); }
 
 body {
-  background: url(../images/aboutBack.png) no-repeat center;
+  background: url(../images/aboutBack.webp) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,15 +33,16 @@ body {
     display: flex;
     width: 100%; }
   body #sidebar {
-    width: 250px;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    transition: all 0.3s; }
-  body #sidebar #sidebar > a {
-    background: #8e7c7c8f; }
+    display: contents; }
+  body #sidebar > a.list-group-item.active {
+    background: #93c1d2; }
+  body #sidebar > a.list-group-item {
+    background: #6c919f; }
+  body #sidebar > a.list-group-item:hover {
+    background-color: #485f68; }
+  body #sidebar > h3 {
+    color: #d2d2d2; }
 
 #art {
   padding-top: 2.5em;
@@ -132,3 +133,13 @@ body {
 #links a {
   padding-left: 1em;
   padding-right: 1em; }
+
+#home {
+  padding: 2em;
+  background-color: #bfbfbf99;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px; }
+  #home h3 p {
+    color: #d2d2d2; }

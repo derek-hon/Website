@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/derek-hon/Website/issues"
   },
-  "homepage": "https://derek-hon.github.io/Website/"
+  "homepage": "https://derek-hon.github.io/Website/",
+  "dependencies": {
+    "npm": "^7.21.0"
+  }
 }
