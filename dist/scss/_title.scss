@@ -13,6 +13,14 @@ body {
         display: flex;
         width: 100%;
     }
+
+    #topNav {
+        background: #5f7f9bd6;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -o-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
     
     #sidebar {
         position: fixed;
@@ -20,15 +28,17 @@ body {
         display:contents;
 
         #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active {
-            background: #93c1d2
+            background: #93c1d2ce;
+            color: white;
         }
 
         #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
-            background: #6c919f;
+            background: #6c919fd8;
         }
 
         #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
-            background: #597883;
+            background: #597883e0;
+            color: white;
         }
     }
 
