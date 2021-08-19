@@ -27,9 +27,14 @@
 // });
 
 $(document).ready(function() {
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-   });
+//     $("#sidebar").mCustomScrollbar({
+//         theme: "minimal"
+//    });
+
+   $("#menuAbout").onClick(function() {
+       $(this).parent.find(".active").fadeOut("fast");
+       $("#about").fadeIn("fast");
+   })
 
    $("window").scrollY(function() {
        myFunction;
