@@ -31,7 +31,7 @@ $(document).ready(function() {
 //         theme: "minimal"
 //    });
 
-   $("#menuAbout").onClick(function() {
+   $("#menuAbout").click(function() {
        $(this).parent.find(".active").fadeOut("fast");
        $("#about").fadeIn("fast");
    })
