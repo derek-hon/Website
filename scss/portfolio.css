@@ -38,6 +38,16 @@ body {
     -moz-border-radius: 5px 5px 5px 5px;
     -o-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px; }
+    body #topNav .toggle-off {
+      background-color: #8cd98c;
+      color: white; }
+    body #topNav .toggle-off:hover {
+      background-color: #71ad71;
+      color: white; }
+    body #topNav .toggle-on {
+      background-color: #568cc6; }
+    body #topNav .toggle-on:hover {
+      background-color: #3e6794; }
   body #navTitle {
     width: 100%;
     color: #bdc6ce; }
