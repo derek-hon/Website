@@ -35,11 +35,11 @@ body {
   body #sidebar {
     position: fixed;
     display: contents; }
-  body #sidebar > a.list-group-item.active {
+  body #sidebar > a.active {
     background: #93c1d2; }
-  body #sidebar > a.list-group-item {
+  body #sidebar > a {
     background: #6c919f; }
-  body #sidebar > a.list-group-item:hover {
+  body #sidebar > a:hover {
     background-color: #485f68; }
   body #sidebar > h3 {
     color: #d2d2d2; }
