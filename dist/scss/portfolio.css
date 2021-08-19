@@ -50,7 +50,7 @@ body {
       background-color: #3e6794; }
   body #navTitle {
     width: 100%;
-    color: #bdc6ce; }
+    color: #e6f3ff; }
   body #sidebar {
     position: fixed;
     display: contents; }
@@ -58,7 +58,8 @@ body {
       background: #93c1d2ce;
       color: white; }
     body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
-      background: #6c919fd8; }
+      background: #6c919fd8;
+      color: white; }
     body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
       background: #597883e0;
       color: white; }

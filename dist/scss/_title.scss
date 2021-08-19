@@ -42,7 +42,7 @@ body {
 
     #navTitle {
         width: 100%;
-        color:#bdc6ce;
+        color:#e6f3ff;
     }
     
     #sidebar {
@@ -57,6 +57,7 @@ body {
 
         #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
             background: #6c919fd8;
+            color: white;
         }
 
         #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
