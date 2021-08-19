@@ -36,11 +36,11 @@ $(document).ready(function() {
        $("#about").fadeIn("fast");
    })
 
-   $("window").scrollY(function() {
-       myFunction;
-   });
-
    var sticky = $("#sidebar").offset.top;
+
+   $("window").scroll(function() {
+    myFunction;
+   });
 
    function myFunction() {
     if (window.pageYOffset >= sticky) {
