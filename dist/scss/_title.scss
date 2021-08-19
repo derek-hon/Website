@@ -20,6 +20,24 @@ body {
         -moz-border-radius: 5px 5px 5px 5px;
         -o-border-radius: 5px 5px 5px 5px;
         border-radius: 5px 5px 5px 5px;
+
+        .toggle-off {
+            background-color: #8cd98c;
+            color: white;
+        }
+
+        .toggle-off:hover {
+            background-color: #71ad71;
+            color: white;
+        }
+
+        .toggle-on {
+            background-color: #568cc6;
+        }
+
+        .toggle-on:hover {
+            background-color: #3e6794;
+        }
     }
 
     #navTitle {
