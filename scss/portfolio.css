@@ -65,6 +65,10 @@ body {
       color: white; }
   body #sidebar > h3 {
     color: #d2d2d2; }
+  body .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; }
 
 #art {
   padding-top: 2.5em;

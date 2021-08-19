@@ -31,6 +31,17 @@ $(document).ready(function() {
         theme: "minimal"
    });
 
-   
+   $("window").scrollY(function() {
+       myFunction;
+   });
 
+   var sticky = $("#sidebar").offset.top;
+
+   function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      $("#sidebar").addClass("sticky")
+    } else {
+      $("#sidebar").removeClass("sticky");
+    }
+  } 
 });
