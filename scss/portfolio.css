@@ -38,6 +38,9 @@ body {
     -moz-border-radius: 5px 5px 5px 5px;
     -o-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px; }
+  body #navTitle {
+    width: 100%;
+    color: #bdc6ce; }
   body #sidebar {
     position: fixed;
     display: contents; }
