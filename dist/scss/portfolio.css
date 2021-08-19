@@ -34,7 +34,6 @@ body {
     width: 100%; }
   body #sidebar {
     position: fixed;
-<<<<<<< HEAD
     display: contents; }
   body #sidebar > a.list-group-item.active {
     background: #93c1d2; }
@@ -42,15 +41,6 @@ body {
     background: #6c919f; }
   body #sidebar > a.list-group-item:hover {
     background-color: #485f68; }
-=======
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    transition: all 0.3s; }
-  body #sidebar #sidebar > a {
-    background: #8e7c7c8f; }
->>>>>>> 8de97a72dc6fe693973cb323c299e378105a3c75
   body #sidebar > h3 {
     color: #d2d2d2; }
 
