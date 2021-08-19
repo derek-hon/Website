@@ -20,15 +20,15 @@ body {
         display:contents;
     }
 
-    #sidebar > a.active {
+    #sidebar > #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active {
         background: #93c1d2
     }
 
-    #sidebar > a {
+    #sidebar > #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
         background: #6c919f;
     }
 
-    #sidebar > a:hover {
+    #sidebar > #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
         background-color: #485f68;
     }
 
