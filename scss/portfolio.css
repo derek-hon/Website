@@ -33,8 +33,16 @@ body {
     display: flex;
     width: 100%; }
   body #sidebar {
-    width: 250px;
     position: fixed;
+<<<<<<< HEAD
+    display: contents; }
+  body #sidebar > a.list-group-item.active {
+    background: #93c1d2; }
+  body #sidebar > a.list-group-item {
+    background: #6c919f; }
+  body #sidebar > a.list-group-item:hover {
+    background-color: #485f68; }
+=======
     top: 0;
     left: 0;
     height: 100vh;
@@ -42,6 +50,7 @@ body {
     transition: all 0.3s; }
   body #sidebar #sidebar > a {
     background: #8e7c7c8f; }
+>>>>>>> 8de97a72dc6fe693973cb323c299e378105a3c75
   body #sidebar > h3 {
     color: #d2d2d2; }
 
@@ -134,3 +143,13 @@ body {
 #links a {
   padding-left: 1em;
   padding-right: 1em; }
+
+#home {
+  padding: 2em;
+  background-color: #bfbfbf99;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px; }
+  #home h3 p {
+    color: #d2d2d2; }
