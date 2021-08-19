@@ -35,11 +35,11 @@ body {
   body #sidebar {
     position: fixed;
     display: contents; }
-  body #sidebar > a.active {
+  body #sidebar > #menuHome.active, body #menuAbout.active, body #menuCode.active, body #menuPhoto.active, body #menuArt.active, body #cv.active, body #github.active, body #linkedin.active {
     background: #93c1d2; }
-  body #sidebar > a {
+  body #sidebar > #menuHome, body #menuAbout, body #menuCode, body #menuPhoto, body #menuArt, body #cv, body #github, body #linkedin {
     background: #6c919f; }
-  body #sidebar > a:hover {
+  body #sidebar > #menuHome:hover, body #menuAbout:hover, body #menuCode:hover, body #menuPhoto:hover, body #menuArt:hover, body #cv:hover, body #github:hover, body #linkedin:hover {
     background-color: #485f68; }
   body #sidebar > h3 {
     color: #d2d2d2; }
