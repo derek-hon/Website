@@ -18,18 +18,18 @@ body {
         position: fixed;
         // transition: all 0.3s;
         display:contents;
-    }
 
-    #sidebar > #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active {
-        background: #93c1d2
-    }
+        #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active {
+            background: #93c1d2
+        }
 
-    #sidebar > #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
-        background: #6c919f;
-    }
+        #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
+            background: #6c919f;
+        }
 
-    #sidebar > #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
-        background-color: #485f68;
+        #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
+            background-color: rgb(95, 118, 126);
+        }
     }
 
     #sidebar > h3 {
