@@ -20,15 +20,15 @@ body {
         display:contents;
     }
 
-    #sidebar > a.list-group-item.active {
+    #sidebar > a.active {
         background: #93c1d2
     }
 
-    #sidebar > a.list-group-item {
+    #sidebar > a {
         background: #6c919f;
     }
 
-    #sidebar > a.list-group-item:hover {
+    #sidebar > a:hover {
         background-color: #485f68;
     }
 
