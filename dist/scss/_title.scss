@@ -14,35 +14,13 @@ body {
         width: 100%;
     }
 
-    #topNav {
-        background: #5f7f9bd6;
-        -webkit-border-radius: 5px 5px 5px 5px;
-        -moz-border-radius: 5px 5px 5px 5px;
-        -o-border-radius: 5px 5px 5px 5px;
-        border-radius: 5px 5px 5px 5px;
-
-        .toggle-off {
-            background-color: #8cd98c;
-            color: white;
-        }
-
-        .toggle-off:hover {
-            background-color: #71ad71;
-            color: white;
-        }
-
-        .toggle-on {
-            background-color: #568cc6;
-        }
-
-        .toggle-on:hover {
-            background-color: #3e6794;
-        }
-    }
-
-    #navTitle {
+    img#me {
         width: 100%;
-        color:#e6f3ff;
+        -webkit-border-radius: 9em;
+        -moz-border-radius: 9em;
+        -o-border-radius: 9em;
+        border-radius: 9em;
+        border: 5px solid white;
     }
     
     #sidebar {
@@ -56,7 +34,8 @@ body {
         }
 
         #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
-            background: #6c919fd8;
+            background: #0000;
+            border-color: #0000;
             color: white;
         }
 
