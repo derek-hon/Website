@@ -5,15 +5,6 @@
     font-size: 1.2rem;
     vertical-align: middle;
     display: inline-block; }
-  #about .rowContent {
-    width: 90%;
-    margin: auto;
-    padding: 2em;
-    background-color: rgba(0, 0, 0, 0.75);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px; }
 
 body {
   background: url(../images/aboutBack.webp) no-repeat center;
@@ -24,6 +15,8 @@ body {
   background-attachment: fixed;
   min-height: 100%;
   height: 100vh; }
+  body h3 {
+    color: white; }
   body .wrapper {
     display: flex;
     width: 100%;
@@ -33,8 +26,6 @@ body {
     top: 50%;
     margin: 0;
     transform: translateY(-50%); }
-  body #imgDiv h3 {
-    color: white; }
   body #imgDiv {
     padding: 2em; }
     body #imgDiv img#me {
@@ -68,11 +59,11 @@ body {
 #art {
   padding-top: 2.5em;
   display: none; }
-  #art .rowContent {
-    width: 90%;
-    margin: auto;
-    padding: 2em;
-    background-color: rgba(0, 0, 0, 0.5); }
+  #art img {
+    vertical-align: middle;
+    border-style: none;
+    height: auto;
+    width: 100%; }
 
 #photo {
   padding-top: 2.5em;
@@ -82,14 +73,8 @@ body {
   #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3 {
     top: 35%; }
   #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
-    position: absolute;
     color: #e2e2e2;
     font-size: 2.5rem; }
-  #photo .rowContent {
-    width: 80%;
-    margin: auto;
-    padding: 2em 1em;
-    background-color: rgba(0, 0, 0, 0.5); }
   #photo h3 > a {
     color: #fff;
     text-decoration: none;
@@ -97,7 +82,6 @@ body {
     position: relative; }
   #photo h3 > a:before {
     content: "";
-    position: absolute;
     width: 100%;
     height: 2px;
     bottom: 0;
@@ -136,3 +120,13 @@ body {
 #links a {
   padding-left: 1em;
   padding-right: 1em; }
+
+body .rowContent {
+  width: 90%;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
