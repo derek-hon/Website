@@ -28,25 +28,31 @@ body {
   body .wrapper {
     display: flex;
     width: 100%; }
-  body img#me {
-    width: 100%;
+  body #sideContent {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%); }
+  body #imgDiv img#me {
+    width: 65%;
     -webkit-border-radius: 9em;
     -moz-border-radius: 9em;
     -o-border-radius: 9em;
     border-radius: 9em;
-    border: 5px solid white; }
+    border: 5px solid white;
+    height: auto;
+    display: block;
+    margin: auto; }
   body #sidebar {
     position: fixed;
     display: contents; }
-    body #sidebar #menuHome.active, body #sidebar #menuAbout.active, body #sidebar #menuCode.active, body #sidebar #menuPhoto.active, body #sidebar #menuArt.active, body #sidebar #cv.active, body #sidebar #github.active, body #sidebar #linkedin.active {
+    body #sidebar #menuHome.active, body #sidebar #menuAbout.active, body #sidebar #menuCode.active, body #sidebar #menuPhoto.active, body #sidebar #menuArt.active, body #sidebar #cv.active, body #sidebar #github.active, body #sidebar #linkedin.active,
+    body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
       background: #93c1d2ce;
       color: white; }
     body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
       background: #0000;
       border-color: #0000;
-      color: white; }
-    body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
-      background: #597883e0;
       color: white; }
   body #sidebar > h3 {
     color: #d2d2d2; }

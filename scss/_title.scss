@@ -14,13 +14,26 @@ body {
         width: 100%;
     }
 
-    img#me {
-        width: 100%;
-        -webkit-border-radius: 9em;
-        -moz-border-radius: 9em;
-        -o-border-radius: 9em;
-        border-radius: 9em;
-        border: 5px solid white;
+    #sideContent {
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        transform: translateY(-50%);
+    }
+
+    #imgDiv {
+        
+        img#me {
+            width: 65%;
+            -webkit-border-radius: 9em;
+            -moz-border-radius: 9em;
+            -o-border-radius: 9em;
+            border-radius: 9em;
+            border: 5px solid white;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
     }
     
     #sidebar {
@@ -28,7 +41,8 @@ body {
         // transition: all 0.3s;
         display:contents;
 
-        #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active {
+        #menuHome.active, #menuAbout.active, #menuCode.active, #menuPhoto.active, #menuArt.active, #cv.active, #github.active, #linkedin.active,
+        #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
             background: #93c1d2ce;
             color: white;
         }
@@ -36,11 +50,6 @@ body {
         #menuHome, #menuAbout, #menuCode, #menuPhoto, #menuArt, #cv, #github, #linkedin {
             background: #0000;
             border-color: #0000;
-            color: white;
-        }
-
-        #menuHome:hover, #menuAbout:hover, #menuCode:hover, #menuPhoto:hover, #menuArt:hover, #cv:hover, #github:hover, #linkedin:hover {
-            background: #597883e0;
             color: white;
         }
     }
