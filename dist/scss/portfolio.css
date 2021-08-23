@@ -1,7 +1,5 @@
 #about {
-  padding-top: 2.5em;
-  padding-bottom: 25vw;
-  display: none; }
+  padding-top: 2.5em; }
   #about #aboutTitle {
     color: #f7f7f7;
     width: 80%;
@@ -86,7 +84,6 @@ body {
 
 #photo {
   padding-top: 2.5em;
-  padding-bottom: 25vw;
   display: none; }
   #photo #photoTitle {
     color: #f7f7f7;
@@ -132,7 +129,6 @@ body {
 
 #cs {
   padding-top: 2.5em;
-  padding-bottom: 25vw;
   display: none; }
   #cs #csTitle {
     color: #f7f7f7;
@@ -159,13 +155,3 @@ body {
 #links a {
   padding-left: 1em;
   padding-right: 1em; }
-
-#home {
-  padding: 2em;
-  background-color: #bfbfbf99;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -o-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px; }
-  #home h3 p {
-    color: #d2d2d2; }
