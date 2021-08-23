@@ -32,8 +32,10 @@ $(document).ready(function() {
 //    });
 
    $("#menuAbout").click(function() {
-       $(this).parent().find(".active").fadeOut("fast");
+       $("#content").find(".live").fadeOut("fast");
+       $("#content").find(".live").removeClass("live");
        $("#about").fadeIn("fast");
+       $("#about").addClass("live");
    })
 
    var sticky = $("#sidebar").offset.top;
