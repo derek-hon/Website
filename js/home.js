@@ -32,7 +32,7 @@ $(document).ready(function() {
 //    });
 
    $("#menuAbout").click(function() {
-       $(this).parent.find(".active").fadeOut("fast");
+       $(this).parent().find(".active").fadeOut("fast");
        $("#about").fadeIn("fast");
    })
 
