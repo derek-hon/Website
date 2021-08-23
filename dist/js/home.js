@@ -83,7 +83,8 @@ $(document).ready(function() {
 
    function myFunction() {
     if (window.pageYOffset >= sticky) {
-      $("#sidebar").addClass("sticky")
+      $("#sidebar").addClass("sticky");
+      console.log("sticky");
     } else {
       $("#sidebar").removeClass("sticky");
     }
