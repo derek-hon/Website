@@ -1,9 +1,5 @@
 #about {
     padding-top: 2.5em;
-    -webkit-border-radius: 9em;
-    -moz-border-radius: 9em;
-    -o-border-radius: 9em;
-    border-radius: 9em;
 
     #aboutMe {
         color: #e2e2e2;
@@ -17,5 +13,9 @@
         margin: auto;
         padding: 2em;
         background-color: rgba(0, 0, 0, 0.75);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
     }
 }

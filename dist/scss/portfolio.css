@@ -1,9 +1,5 @@
 #about {
-  padding-top: 2.5em;
-  -webkit-border-radius: 9em;
-  -moz-border-radius: 9em;
-  -o-border-radius: 9em;
-  border-radius: 9em; }
+  padding-top: 2.5em; }
   #about #aboutMe {
     color: #e2e2e2;
     font-size: 1.2rem;
@@ -13,7 +9,11 @@
     width: 90%;
     margin: auto;
     padding: 2em;
-    background-color: rgba(0, 0, 0, 0.75); }
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px; }
 
 body {
   background: url(../images/aboutBack.webp) no-repeat center;
@@ -33,6 +33,8 @@ body {
     top: 50%;
     margin: 0;
     transform: translateY(-50%); }
+  body #imgDiv h3 {
+    color: white; }
   body #imgDiv {
     padding: 2em; }
     body #imgDiv img#me {
@@ -65,29 +67,18 @@ body {
 
 #art {
   padding-top: 2.5em;
-  padding-bottom: 25vw;
   display: none; }
-  #art #artTitle {
-    color: #f7f7f7;
-    width: 100%;
-    font-weight: 400; }
   #art .rowContent {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 2em 1em;
+    padding: 2em;
     background-color: rgba(0, 0, 0, 0.5); }
 
 #photo {
   padding-top: 2.5em;
   display: none; }
-  #photo #photoTitle {
-    color: #f7f7f7;
-    width: 100%;
-    font-weight: 400; }
   #photo #decewFalls, #photo #mahtay, #photo #vinyl {
     padding-top: 3em; }
-  #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
-    top: 25%; }
   #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3 {
     top: 35%; }
   #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
@@ -125,19 +116,14 @@ body {
 #cs {
   padding-top: 2.5em;
   display: none; }
-  #cs #csTitle {
-    color: #f7f7f7;
-    width: 100%;
-    font-weight: 400; }
   #cs #appTitle {
     color: #c9c9c9; }
   #cs .rowContent {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 2em 1em;
+    padding: 2em;
     background-color: rgba(0, 0, 0, 0.5); }
   #cs #csDesc {
-    padding-top: 2em;
     color: #e2e2e2;
     font-size: 1.3rem;
     vertical-align: middle;
