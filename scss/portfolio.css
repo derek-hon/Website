@@ -5,8 +5,6 @@
     width: 80%;
     margin: 0 auto;
     font-weight: 400; }
-  #about img {
-    width: 100%; }
   #about #aboutMe {
     padding-top: 2em;
     color: #e2e2e2;
@@ -30,25 +28,13 @@ body {
   body .wrapper {
     display: flex;
     width: 100%; }
-  body #topNav {
-    background: #5f7f9bd6;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -o-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px; }
-    body #topNav .toggle-off {
-      background-color: #8cd98c;
-      color: white; }
-    body #topNav .toggle-off:hover {
-      background-color: #71ad71;
-      color: white; }
-    body #topNav .toggle-on {
-      background-color: #568cc6; }
-    body #topNav .toggle-on:hover {
-      background-color: #3e6794; }
-  body #navTitle {
+  body img#me {
     width: 100%;
-    color: #e6f3ff; }
+    -webkit-border-radius: 9em;
+    -moz-border-radius: 9em;
+    -o-border-radius: 9em;
+    border-radius: 9em;
+    border: 5px solid white; }
   body #sidebar {
     position: fixed;
     display: contents; }
@@ -56,7 +42,8 @@ body {
       background: #93c1d2ce;
       color: white; }
     body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
-      background: #6c919fd8;
+      background: #0000;
+      border-color: #0000;
       color: white; }
     body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
       background: #597883e0;
