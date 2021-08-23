@@ -1,24 +1,21 @@
 #about {
     padding-top: 2.5em;
-
-    #aboutTitle {
-        color: #f7f7f7;
-        width:80%;
-        margin: 0 auto;
-        font-weight: 400;
-    }
+    -webkit-border-radius: 9em;
+    -moz-border-radius: 9em;
+    -o-border-radius: 9em;
+    border-radius: 9em;
 
     #aboutMe {
         color: #e2e2e2;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         vertical-align: middle;
         display: inline-block;
     }
 
     .rowContent {
-        width:80%;
+        width:90%;
         margin: auto;
-        padding: 1.5em;
-        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.75);
     }
 }

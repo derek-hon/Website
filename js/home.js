@@ -38,6 +38,27 @@ $(document).ready(function() {
        $("#about").addClass("live");
    })
 
+   $("#menuCode").click(function() {
+      $("#content").find(".live").fadeOut("fast");
+      $("#content").find(".live").removeClass("live");
+      $("#cs").fadeIn("fast");
+      $("#cs").addClass("live");
+  })
+
+  $("#menuPhoto").click(function() {
+      $("#content").find(".live").fadeOut("fast");
+      $("#content").find(".live").removeClass("live");
+      $("#photo").fadeIn("fast");
+      $("#photo").addClass("live");
+  })
+
+  $("#menuArt").click(function() {
+      $("#content").find(".live").fadeOut("fast");
+      $("#content").find(".live").removeClass("live");
+      $("#art").fadeIn("fast");
+      $("#art").addClass("live");
+  })
+
    var sticky = $("#sidebar").offset.top;
 
    $("window").scroll(function() {
