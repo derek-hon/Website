@@ -81,6 +81,8 @@ $(document).ready(function() {
           $("#content").find(".slideLive").removeClass("slideLive");
           $("#fallsCarousel").fadeIn("fast");
           $("#fallsCarousel").addClass("slideLive");
+          $(this).parent().find("li.active").removeClass("active");
+          $(this).addClass("active");
         });
       }
     })
@@ -91,6 +93,8 @@ $(document).ready(function() {
           $("#content").find(".slideLive").removeClass("slideLive");
           $("#cafeCarousel").fadeIn("fast");
           $("#cafeCarousel").addClass("slideLive");
+          $(this).parent().find("li.active").removeClass("active");
+          $(this).addClass("active");
         });
       }
     })
@@ -101,6 +105,8 @@ $(document).ready(function() {
           $("#content").find(".slideLive").removeClass("slideLive");
           $("#concertCarousel").fadeIn("fast");
           $("#concertCarousel").addClass("slideLive");
+          $(this).parent().find("li.active").removeClass("active");
+          $(this).addClass("active");
         });
       }
     })
