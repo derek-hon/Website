@@ -76,35 +76,29 @@ $(document).ready(function() {
     })
   
     $("#fallsCarousel").click(function() {
-      if ($(this) != $(this).parent().find(".active")) {
+      if ($(this) != $(this).parent().find(".slideLive")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
-        $("#falls").fadeIn("fast");
-        $("#falls").addClass("slideLive");
-        $(this).parent().find(".active").removeClass("active");
-        $(this).addClass("active");
+        $("#fallsCarousel").fadeIn("fast");
+        $("#fallsCarousel").addClass("slideLive");
       }
     })
   
     $("#cafeCarousel").click(function() {
-      if ($(this) != $(this).parent().find(".active")) {
+      if ($(this) != $(this).parent().find(".slideLive")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
-        $("#cafe").fadeIn("fast");
-        $("#cafe").addClass("slideLive");
-        $(this).parent().find(".active").removeClass("active");
-        $(this).addClass("active");
+        $("#cafeCarousel").fadeIn("fast");
+        $("#cafeCarousel").addClass("slideLive");
       }
     })
   
     $("#concertCarousel").click(function() {
-      if ($(this) != $(this).parent().find(".active")) {
+      if ($(this) != $(this).parent().find(".slideLive")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
-        $("#concert").fadeIn("fast");
-        $("#concert").addClass("slideLive");
-        $(this).parent().find(".active").removeClass("active");
-        $(this).addClass("active");
+        $("#concertCarousel").fadeIn("fast");
+        $("#concertCarousel").addClass("slideLive");
       }
     })
   
