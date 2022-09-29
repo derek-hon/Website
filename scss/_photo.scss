@@ -1,6 +1,9 @@
 #photo {
-    padding-top: 2.5em;
     display: none;
+
+    > div.carousel {
+        width: 90%;
+    }
     
     #decewFalls, #mahtay, #vinyl {
         padding-top: 3em;
@@ -19,7 +22,7 @@
         display: none;
     }
 
-    .carousel-control-prev-icon::after {
+    .carousel-control-prev-icon::after, .carousel-control-next-icon::after {
         content: none;
     }
 
