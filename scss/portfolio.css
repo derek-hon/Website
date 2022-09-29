@@ -76,6 +76,7 @@ body .sticky {
 
 #photo {
   display: none;
+  padding-top: 2.5em;
 }
 #photo #decewFalls, #photo #mahtay, #photo #vinyl {
   padding-top: 3em;
