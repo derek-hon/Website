@@ -77,28 +77,31 @@ $(document).ready(function() {
   
     $("#waterfallPhotos").click(function() {
       if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast");
-        $("#content").find(".slideLive").removeClass("slideLive");
-        $("#fallsCarousel").fadeIn("fast");
-        $("#fallsCarousel").addClass("slideLive");
+        $("#content").find(".slideLive").fadeOut("fast", function() {
+          $("#content").find(".slideLive").removeClass("slideLive");
+          $("#fallsCarousel").fadeIn("fast");
+          $("#fallsCarousel").addClass("slideLive");
+        });
       }
     })
   
     $("#cafePhotos").click(function() {
       if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast");
-        $("#content").find(".slideLive").removeClass("slideLive");
-        $("#cafeCarousel").fadeIn("fast");
-        $("#cafeCarousel").addClass("slideLive");
+        $("#content").find(".slideLive").fadeOut("fast", function() {
+          $("#content").find(".slideLive").removeClass("slideLive");
+          $("#cafeCarousel").fadeIn("fast");
+          $("#cafeCarousel").addClass("slideLive");
+        });
       }
     })
   
     $("#concertPhotos").click(function() {
       if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast");
-        $("#content").find(".slideLive").removeClass("slideLive");
-        $("#concertCarousel").fadeIn("fast");
-        $("#concertCarousel").addClass("slideLive");
+        $("#content").find(".slideLive").fadeOut("fast", function() {
+          $("#content").find(".slideLive").removeClass("slideLive");
+          $("#concertCarousel").fadeIn("fast");
+          $("#concertCarousel").addClass("slideLive");
+        });
       }
     })
   
