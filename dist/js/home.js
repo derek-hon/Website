@@ -75,6 +75,39 @@ $(document).ready(function() {
     }
   })
 
+  $("#waterfallPhotos").click(function() {
+    if ($(this) != $(this).parent().find(".active")) {
+      $("#content").find(".slideLive").fadeOut("fast");
+      $("#content").find(".slideLive").removeClass("slideLive");
+      $("#falls").fadeIn("fast");
+      $("#falls").addClass("slideLive");
+      $(this).parent().find(".active").removeClass("active");
+      $(this).addClass("active");
+    }
+  })
+
+  $("#cafePhotos").click(function() {
+    if ($(this) != $(this).parent().find(".active")) {
+      $("#content").find(".slideLive").fadeOut("fast");
+      $("#content").find(".slideLive").removeClass("slideLive");
+      $("#cafe").fadeIn("fast");
+      $("#cafe").addClass("slideLive");
+      $(this).parent().find(".active").removeClass("active");
+      $(this).addClass("active");
+    }
+  })
+
+  $("#concertPhotos").click(function() {
+    if ($(this) != $(this).parent().find(".active")) {
+      $("#content").find(".slideLive").fadeOut("fast");
+      $("#content").find(".slideLive").removeClass("slideLive");
+      $("#concert").fadeIn("fast");
+      $("#concert").addClass("slideLive");
+      $(this).parent().find(".active").removeClass("active");
+      $(this).addClass("active");
+    }
+  })
+
    var sticky = $("#sidebar").offset.top;
 
    $("window").scroll(function() {
