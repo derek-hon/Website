@@ -87,7 +87,7 @@ body .sticky {
   color: #e2e2e2;
   font-size: 2.5rem;
 }
-#photo #concert, #photo #cafe {
+#photo #concertCarousel, #photo #cafeCarousel {
   display: none;
 }
 #photo .carousel-control-prev-icon::after, #photo .carousel-control-next-icon::after {
