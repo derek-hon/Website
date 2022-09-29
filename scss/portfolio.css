@@ -77,9 +77,6 @@ body .sticky {
 #photo {
   display: none;
 }
-#photo > div.carousel {
-  width: 90%;
-}
 #photo #decewFalls, #photo #mahtay, #photo #vinyl {
   padding-top: 3em;
 }
