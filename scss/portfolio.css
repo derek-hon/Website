@@ -1,132 +1,150 @@
 #about {
-  padding-top: 2.5em; }
-  #about #aboutMe {
-    color: #e2e2e2;
-    font-size: 1.2rem;
-    vertical-align: middle;
-    display: inline-block; }
+  padding-top: 2.5em;
+}
+#about #aboutMe {
+  color: #e2e2e2;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 body {
   background: url(../images/aboutBack.webp) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
-  height: 100vh; }
-  body h3, body h2 {
-    color: white; }
-  body .wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%; }
-  body #sideContent {
-    position: absolute;
-    top: 50%;
-    margin: 0;
-    transform: translateY(-50%); }
-  body #imgDiv {
-    padding: 2em; }
-    body #imgDiv img#me {
-      width: 65%;
-      -webkit-border-radius: 9em;
-      -moz-border-radius: 9em;
-      -o-border-radius: 9em;
-      border-radius: 9em;
-      border: 5px solid white;
-      height: auto;
-      display: block;
-      margin: auto; }
-  body #sidebar {
-    position: fixed;
-    display: contents; }
-    body #sidebar #menuHome.active, body #sidebar #menuAbout.active, body #sidebar #menuCode.active, body #sidebar #menuPhoto.active, body #sidebar #menuArt.active, body #sidebar #cv.active, body #sidebar #github.active, body #sidebar #linkedin.active,
-    body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
-      background: #93c1d287;
-      color: white; }
-    body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
-      background: #0000;
-      border-color: #0000;
-      color: white; }
-  body #sidebar > h3 {
-    color: #d2d2d2; }
-  body .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%; }
+  height: 100vh;
+}
+body h3, body h2 {
+  color: white;
+}
+body .wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+body #sideContent {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+}
+body #imgDiv {
+  padding: 2em;
+}
+body #imgDiv img#me {
+  width: 65%;
+  border-radius: 9em;
+  border: 5px solid white;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+body #sidebar {
+  position: fixed;
+  display: contents;
+}
+body #sidebar #menuHome.active, body #sidebar #menuAbout.active, body #sidebar #menuCode.active, body #sidebar #menuPhoto.active, body #sidebar #menuArt.active, body #sidebar #cv.active, body #sidebar #github.active, body #sidebar #linkedin.active,
+body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
+  background: rgba(147, 193, 210, 0.5294117647);
+  color: white;
+}
+body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+body #sidebar > h3 {
+  color: #d2d2d2;
+}
+body .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 #art {
   padding-top: 2.5em;
-  display: none; }
-  #art img {
-    vertical-align: middle;
-    border-style: none;
-    height: auto;
-    width: 100%; }
+  display: none;
+}
+#art img {
+  vertical-align: middle;
+  border-style: none;
+  height: auto;
+  width: 100%;
+}
 
 #photo {
   padding-top: 2.5em;
-  display: none; }
-  #photo #decewFalls, #photo #mahtay, #photo #vinyl {
-    padding-top: 3em; }
-  #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3 {
-    top: 35%; }
-  #photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
-    color: #e2e2e2;
-    font-size: 2.5rem; }
-  #photo h3 > a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: normal;
-    position: relative; }
-  #photo h3 > a:before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-  #photo h3 > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); }
+  display: none;
+}
+#photo #decewFalls, #photo #mahtay, #photo #vinyl {
+  padding-top: 3em;
+}
+#photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3 {
+  color: #e2e2e2;
+  font-size: 2.5rem;
+}
+#photo #concert, #photo #cafe {
+  display: none;
+}
+#photo h3 > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  position: relative;
+}
+#photo h3 > a:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+#photo h3 > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 
 #cs {
   padding-top: 2.5em;
-  display: none; }
-  #cs #appTitle {
-    color: #c9c9c9; }
-  #cs .rowContent {
-    width: 90%;
-    margin: auto;
-    padding: 2em;
-    background-color: rgba(0, 0, 0, 0.5); }
-  #cs #csDesc {
-    color: #e2e2e2;
-    font-size: 1.3rem;
-    vertical-align: middle;
-    display: inline-block; }
-  #cs img {
-    max-width: 100%; }
+  display: none;
+}
+#cs #appTitle {
+  color: #c9c9c9;
+}
+#cs .rowContent {
+  width: 90%;
+  margin: auto;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#cs #csDesc {
+  color: #e2e2e2;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+#cs img {
+  max-width: 100%;
+}
 
 #links .linkFooter {
-  background-color: rgba(202, 202, 202, 0.671); }
+  background-color: rgba(202, 202, 202, 0.671);
+}
 #links a {
   padding-left: 1em;
-  padding-right: 1em; }
+  padding-right: 1em;
+}
 
 body .rowContent {
   width: 90%;
   margin: auto;
   padding: 2em;
   background-color: rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}/*# sourceMappingURL=portfolio.css.map */

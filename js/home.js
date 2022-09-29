@@ -27,66 +27,99 @@
 // });
 
 $(document).ready(function() {
-//     $("#sidebar").mCustomScrollbar({
-//         theme: "minimal"
-//    });
-
-   $("#menuAbout").click(function() {
-       if ($(this) != $(this).parent().find(".active")) {
+  //     $("#sidebar").mCustomScrollbar({
+  //         theme: "minimal"
+  //    });
+  
+     $("#menuAbout").click(function() {
+         if ($(this) != $(this).parent().find(".active")) {
+            $("#content").find(".live").fadeOut("fast");
+            $("#content").find(".live").removeClass("live");
+            $("#about").fadeIn("fast");
+            $("#about").addClass("live");
+            $(this).parent().find(".active").removeClass("active");
+            $(this).addClass("active");
+         }
+     })
+  
+     $("#menuCode").click(function() {
+        if ($(this) != $(this).parent().find(".active")) {
           $("#content").find(".live").fadeOut("fast");
           $("#content").find(".live").removeClass("live");
-          $("#about").fadeIn("fast");
-          $("#about").addClass("live");
+          $("#cs").fadeIn("fast");
+          $("#cs").addClass("live");
           $(this).parent().find(".active").removeClass("active");
           $(this).addClass("active");
-       }
-   })
-
-   $("#menuCode").click(function() {
+        }
+    })
+  
+    $("#menuPhoto").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
         $("#content").find(".live").fadeOut("fast");
         $("#content").find(".live").removeClass("live");
-        $("#cs").fadeIn("fast");
-        $("#cs").addClass("live");
+        $("#photo").fadeIn("fast");
+        $("#photo").addClass("live");
         $(this).parent().find(".active").removeClass("active");
         $(this).addClass("active");
       }
-  })
-
-  $("#menuPhoto").click(function() {
-    if ($(this) != $(this).parent().find(".active")) {
-      $("#content").find(".live").fadeOut("fast");
-      $("#content").find(".live").removeClass("live");
-      $("#photo").fadeIn("fast");
-      $("#photo").addClass("live");
-      $(this).parent().find(".active").removeClass("active");
-      $(this).addClass("active");
-    }
-  })
-
-  $("#menuArt").click(function() {
-    if ($(this) != $(this).parent().find(".active")) {
-      $("#content").find(".live").fadeOut("fast");
-      $("#content").find(".live").removeClass("live");
-      $("#art").fadeIn("fast");
-      $("#art").addClass("live");
-      $(this).parent().find(".active").removeClass("active");
-      $(this).addClass("active");
-    }
-  })
-
-   var sticky = $("#sidebar").offset.top;
-
-   $("window").scroll(function() {
-    myFunction;
-   });
-
-   function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      $("#sidebar").addClass("sticky");
-      console.log("sticky");
-    } else {
-      $("#sidebar").removeClass("sticky");
-    }
-  } 
-});
+    })
+  
+    $("#menuArt").click(function() {
+      if ($(this) != $(this).parent().find(".active")) {
+        $("#content").find(".live").fadeOut("fast");
+        $("#content").find(".live").removeClass("live");
+        $("#art").fadeIn("fast");
+        $("#art").addClass("live");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
+      }
+    })
+  
+    $("#waterfallPhotos").click(function() {
+      if ($(this) != $(this).parent().find(".active")) {
+        $("#content").find(".slideLive").fadeOut("fast");
+        $("#content").find(".slideLive").removeClass("slideLive");
+        $("#falls").fadeIn("fast");
+        $("#falls").addClass("slideLive");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
+      }
+    })
+  
+    $("#cafePhotos").click(function() {
+      if ($(this) != $(this).parent().find(".active")) {
+        $("#content").find(".slideLive").fadeOut("fast");
+        $("#content").find(".slideLive").removeClass("slideLive");
+        $("#cafe").fadeIn("fast");
+        $("#cafe").addClass("slideLive");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
+      }
+    })
+  
+    $("#concertPhotos").click(function() {
+      if ($(this) != $(this).parent().find(".active")) {
+        $("#content").find(".slideLive").fadeOut("fast");
+        $("#content").find(".slideLive").removeClass("slideLive");
+        $("#concert").fadeIn("fast");
+        $("#concert").addClass("slideLive");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
+      }
+    })
+  
+     var sticky = $("#sidebar").offset.top;
+  
+     $("window").scroll(function() {
+      myFunction;
+     });
+  
+     function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        $("#sidebar").addClass("sticky");
+        console.log("sticky");
+      } else {
+        $("#sidebar").removeClass("sticky");
+      }
+    } 
+  });

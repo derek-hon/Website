@@ -87,31 +87,232 @@
 
             <div id="about" class="live">
                 <div class="row rowContent">
+                    <h3 class="text-left text-decoration-underline">
+                        Education
+                    </h3>
                     <span id="aboutMe" class="text-left">
                         I am a 2<super>nd</super> year Master's student of Computer Science with a concentration in 
                         Computational Intelligence at Brock University. I also completed my Bachelors in Computer Science
-                        at Brock. My thesis work will focus on the utilization of Genetic Programming to create 3-D models
-                        of buildings combining two diversity techniques.<br /><br />
-
-                        
-                        My coding experience outside of academics is severely lacking and motivation for it primarily started
-                        after the mobile computing course. I consider my future thesis work a passion project due to only pursuing
-                        Masters out of pure passion for Genetic Programming and Map-Elites.<br /><br />
-
-
+                        at Brock. My thesis work explores diversity in Genetic Programming through illuminations algorithms.
+                        In order to illustrate this I will be utilizing procedural texture generation.<br /><br />
+                    </span>
+                    <h3 class="text-left text-decoration-underline">
+                        Hobbies
+                    </h3>
+                    <span id="aboutMe" class="text-left">                        
                         I started photography as a hobby around 2018 joining the Brock University Photography Club, engaging
                         with much more experienced photographers I found a love for the hobby. I am still quite a novice within
                         the hobby and am always looking to improve when the opportunity arises. <br /><br />
 
                         
                         I started doodling in 2008, taking sporadic breaks due to motivation. Up until 2017/18 I would only 
-                        try to replicate art based on references but have tried to branch out more since then.
+                        try to replicate art based on references but have tried to branch out more since then. <br /><br />
+
+                        Home cooking has become much more of a passion since starting university. Exploring new recipes in
+                        recent times is a newfound way to express myself. Primarily italian and asian recipes have taken
+                        most of my interest. <br /><br />
                     </span>
                 </div>
         
             </div>
-    
+
             <div id="photo">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <ul class="nav navbar-nav">
+                        <li id="waterfallPhotos" class="active"><a href="#">Waterfalls</a></li>
+                        <li id="cafePhotos"><a href="#">Cafes</a></li>
+                        <li id="concertPhotos"><a href="#">Concerts</a></li>
+                      </ul>
+                    </div>
+                </nav>
+
+                <div id="falls" class="carousel slide slideLive" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/decew1.jpg" alt="trail">
+                        <div class="carousel-caption">
+                          <h3>Decew Falls, St. Catharines</h3>
+                          <p>Beginning Trail</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/decew2.jpg" alt="Meadow">
+                        <div class="carousel-caption">
+                          <h3>Decew Falls, St. Catharines</h3>
+                          <p>Meadow</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/decew3.jpg" alt="Decew Falls">
+                        <div class="carousel-caption">
+                          <h3>Decew Falls, St. Catharines</h3>
+                          <p>The Falls</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="cafe" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#cafeCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#cafeCarousel" data-slide-to="1"></li>
+                      <li data-target="#cafeCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/mahtay1.jpg" alt="trail">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Christmas Refreshments.</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/mahtay2.jpg" alt="Meadow">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Diligence.</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/mahtay3.jpg" alt="Decew Falls">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Festivities.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#cafeCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#cafeCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="cafe" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#cafeCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#cafeCarousel" data-slide-to="1"></li>
+                      <li data-target="#cafeCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/mahtay1.jpg" alt="trail">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Christmas Refreshments.</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/mahtay2.jpg" alt="Meadow">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Diligence.</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="images/mahtay3.jpg" alt="Decew Falls">
+                        <div class="carousel-caption">
+                          <h3>Mahtay Cafe, St Catharines, ON.</h3>
+                          <p>Festivities.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#cafeCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#cafeCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div id="concert" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#concertCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#concertCarousel" data-slide-to="1"></li>
+                    <li data-target="#concertCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/vinyl1.jpg" alt="Passionately singing into microphone">
+                        <div class="carousel-caption">
+                        <h3>Warehouse Concert Hall, St Catharines ON.</h3>
+                        <p>Instagram: <a class="text-decoration-none" href="https://www.instagram.com/jmarsh_music/">@jmarsh_music</a>.</p>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="images/vinyl2.jpg" alt="Guitarist/Singer singing">
+                        <div class="carousel-caption">
+                        <h3>Warehouse Concert Hall, St Catharines ON.</h3>
+                        <p>Instagram: <a class="text-decoration-none" href="https://www.instagram.com/officialrikashay/">@officialrikashay</a>.</p>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="images/vinyl3.jpg" alt="Bassist playing">
+                        <div class="carousel-caption">
+                        <h3>Warehouse Concert Hall, St Catharines ON.</h3>
+                        <p>Instagram: <a class="text-decoration-none" href="https://www.instagram.com/officialrikashay/">@officialrikashay</a>.</p>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#concertCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#concertCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- <div id="photo">
                 <div class="row rowContent">
                     <div id="decewFalls" class="carousel slide">
                         <div class="carousel-inner">
@@ -235,7 +436,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
     
             <div id="art">
                 <div class="row rowContent">
