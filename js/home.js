@@ -75,7 +75,7 @@ $(document).ready(function() {
       }
     })
   
-    $("#waterfallPhotos").click(function() {
+    $("#fallsCarousel").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
@@ -86,7 +86,7 @@ $(document).ready(function() {
       }
     })
   
-    $("#cafePhotos").click(function() {
+    $("#cafeCarousel").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
@@ -97,7 +97,7 @@ $(document).ready(function() {
       }
     })
   
-    $("#concertPhotos").click(function() {
+    $("#concertCarousel").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
         $("#content").find(".slideLive").fadeOut("fast");
         $("#content").find(".slideLive").removeClass("slideLive");
