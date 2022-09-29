@@ -19,6 +19,14 @@
         display: none;
     }
 
+    .carousel-control-prev-icon::after {
+        content: none;
+    }
+
+    .carousel-item > div.carousel-caption {
+        background-color: rgba(156, 156, 156, 0.529);
+    }
+
     // h3 > a {
     //     color: #fff;
     //     text-decoration: none;
