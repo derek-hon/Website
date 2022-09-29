@@ -33,49 +33,45 @@ $(document).ready(function() {
   
      $("#menuAbout").click(function() {
          if ($(this) != $(this).parent().find(".active")) {
-            $("#content").find(".live").fadeOut("fast", function() {
-              $("#content").find(".live").removeClass("live");
-              $("#about").fadeIn("fast");
-              $("#about").addClass("live");
-              $(this).parent().find(".active").removeClass("active");
-              $(this).addClass("active");
-            });
+            $("#content").find(".live").fadeOut("fast");
+            $("#content").find(".live").removeClass("live");
+            $("#about").fadeIn("fast");
+            $("#about").addClass("live");
+            $(this).parent().find(".active").removeClass("active");
+            $(this).addClass("active");
          }
      })
   
      $("#menuCode").click(function() {
         if ($(this) != $(this).parent().find(".active")) {
-          $("#content").find(".live").fadeOut("fast", function() {
-            $("#content").find(".live").removeClass("live");
-            $("#cs").fadeIn("fast");
-            $("#cs").addClass("live");
-            $(this).parent().find(".active").removeClass("active");
-            $(this).addClass("active");
-          });
+          $("#content").find(".live").fadeOut("fast");
+          $("#content").find(".live").removeClass("live");
+          $("#cs").fadeIn("fast");
+          $("#cs").addClass("live");
+          $(this).parent().find(".active").removeClass("active");
+          $(this).addClass("active");
         }
     })
   
     $("#menuPhoto").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
-        $("#content").find(".live").fadeOut("fast", function() {
-          $("#content").find(".live").removeClass("live");
-          $("#photo").fadeIn("fast");
-          $("#photo").addClass("live");
-          $(this).parent().find(".active").removeClass("active");
-          $(this).addClass("active");
-        });
+        $("#content").find(".live").fadeOut("fast");
+        $("#content").find(".live").removeClass("live");
+        $("#photo").fadeIn("fast");
+        $("#photo").addClass("live");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
       }
     })
   
     $("#menuArt").click(function() {
       if ($(this) != $(this).parent().find(".active")) {
-        $("#content").find(".live").fadeOut("fast", function() {
-          $("#content").find(".live").removeClass("live");
-          $("#art").fadeIn("fast");
-          $("#art").addClass("live");
-          $(this).parent().find(".active").removeClass("active");
-          $(this).addClass("active");
-        });
+        $("#content").find(".live").fadeOut("fast");
+        $("#content").find(".live").removeClass("live");
+        $("#art").fadeIn("fast");
+        $("#art").addClass("live");
+        $(this).parent().find(".active").removeClass("active");
+        $(this).addClass("active");
       }
     })
   
