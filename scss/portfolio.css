@@ -73,6 +73,9 @@ body .sticky {
   height: auto;
   width: 100%;
 }
+#art h3 > a {
+  color: #e2e2e2;
+}
 
 #photo {
   display: none;
