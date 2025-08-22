@@ -9,34 +9,55 @@
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
   background: url(../images/aboutBack.webp) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
   height: 100vh;
+  overflow-x: hidden;
 }
 body h3, body h2 {
   color: white;
 }
 body .wrapper {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 body #sideContent {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 160px;
+  max-width: 22%;
+  height: 100vh;
   margin: 0;
-  transform: translateY(-50%);
+  transform: none;
+  background: rgba(0,0,0,0.2);
+  z-index: 2;
+}
+body #content {
+  /* margin-left: 14%; */
+  width: 100%;
+  /* max-width: 86%; */
+  padding: 2vh 2vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 body #imgDiv {
   padding: 2em;
 }
 body #imgDiv img#me {
-  width: 65%;
+  width: 100%;
   border-radius: 9em;
   border: 5px solid white;
-  height: auto;
+  height: 100%;
   display: block;
   margin: auto;
 }
@@ -45,11 +66,12 @@ body #sidebar {
   display: contents;
 }
 body #sidebar #menuHome.active, body #sidebar #menuAbout.active, body #sidebar #menuCode.active, body #sidebar #menuPhoto.active, body #sidebar #menuArt.active, body #sidebar #cv.active, body #sidebar #github.active, body #sidebar #linkedin.active,
-body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover {
+body #sidebar #menuHome:hover, body #sidebar #menuAbout:hover, body #sidebar #menuCode:hover, body #sidebar #menuPhoto:hover, body #sidebar #menuArt:hover, body #sidebar #cv:hover, body #sidebar #github:hover, body #sidebar #linkedin:hover 
+body #sidebar #menuCV:hover, body #sidebar #menuCV.active {
   background: rgba(147, 193, 210, 0.5294117647);
   color: white;
 }
-body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin {
+body #sidebar #menuHome, body #sidebar #menuAbout, body #sidebar #menuCode, body #sidebar #menuPhoto, body #sidebar #menuArt, body #sidebar #cv, body #sidebar #github, body #sidebar #linkedin, body #sidebar #menuCV {
   background: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
   color: white;
@@ -67,6 +89,9 @@ body .sticky {
   padding-top: 2em;
   display: none;
 }
+#art.live {
+  display: block;
+}
 #art img {
   vertical-align: middle;
   border-style: none;
@@ -81,21 +106,59 @@ body .sticky {
   display: none;
   padding-top: 2.5em;
 }
-#photo #decewFalls, #photo #mahtay, #photo #vinyl {
+#photo #waterfallGrid, #photo #concertGrid, #photo #cafeGrid, #photo #japan2024Grid{
   padding-top: 3em;
 }
-#photo #decew1, #photo #decew2, #photo #decew3, #photo #mahtay1, #photo #mahtay2, #photo #mahtay3, #photo #vinyl1, #photo #vinyl2, #photo #vinyl3, #photo p > a {
-  color: #e2e2e2;
-  font-size: 2.5rem;
-}
+
 #photo #concertCarousel, #photo #cafeCarousel {
   display: none;
 }
 #photo .carousel-control-prev-icon::after, #photo .carousel-control-next-icon::after {
   content: none;
 }
-#photo .carousel-item > div.carousel-caption {
-  background-color: rgba(156, 156, 156, 0.529);
+
+/* Photography grid improvements */
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+}
+.photo-grid-item {
+  flex: 1 1 22vw;
+  max-width: 22vw;
+  min-width: 180px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 2vw rgba(0,0,0,0.2);
+  padding: 1vw;
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-grid-item img {
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
+  border-radius: 0.5vw;
+  box-shadow: 0 0.2vw 1vw rgba(0,0,0,0.15);
+}
+.photo-grid-item .caption {
+  color: #e2e2e2;
+  height: 100%;
+  font-size: 1.1rem;
+  margin-top: 1vh;
+  text-align: center;
+}
+/* Bootstrap card style for photo grid */
+.photo-grid-item {
+  border: 1px solid #ddd;
+  background: rgba(255,255,255,0.05);
 }
 
 #cs {
@@ -135,4 +198,24 @@ body .rowContent {
   padding: 2em;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-}/*# sourceMappingURL=portfolio.css.map */
+}
+
+/* CV Section */
+#cv{
+  display: none;
+  height: 100vh;
+  padding: 0;
+}
+#cv .rowContent {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+#cv iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background: #fff;
+  display: block;
+}

@@ -1,128 +1,90 @@
-// $(function () {
-//     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
-
-//     $("#aPhoto").click(function () {
-//         $('html, body').animate({
-//             scrollTop: $("#photo").offset().top
-//         }, 1000);
-//     });
-
-//     $("#aArt").click(function () {
-//         $('html, body').animate({
-//             scrollTop: $("#art").offset().top
-//         }, 1000);
-//     });
-
-//     $("#aCS").click(function () {
-//         $('html, body').animate({
-//             scrollTop: $("#cs").offset().top
-//         }, 1000);
-//     });
-//     $("#aAbout").click(function () {
-//         console.log("here");
-//         $('html, body').animate({
-//             scrollTop: $("#about").offset().top
-//         }, 1000);
-//     });
-// });
-
 $(document).ready(function() {
-  //     $("#sidebar").mCustomScrollbar({
-  //         theme: "minimal"
-  //    });
-  
-     $("#menuAbout").click(function() {
-         if ($(this) != $(this).parent().find(".active")) {
-            $("#content").find(".live").fadeOut("fast");
-            $("#content").find(".live").removeClass("live");
-            $("#about").fadeIn("fast");
-            $("#about").addClass("live");
-            $(this).parent().find(".active").removeClass("active");
-            $(this).addClass("active");
-         }
-     })
-  
-     $("#menuCode").click(function() {
-        if ($(this) != $(this).parent().find(".active")) {
-          $("#content").find(".live").fadeOut("fast");
-          $("#content").find(".live").removeClass("live");
-          $("#cs").fadeIn("fast");
-          $("#cs").addClass("live");
-          $(this).parent().find(".active").removeClass("active");
-          $(this).addClass("active");
+
+    // Helper function to switch content views smoothly
+    function switchContent(targetId, menuLink) {
+        if (!menuLink.hasClass("active")) {
+            // Find the currently active content and fade it out
+            $("#content").find(".live").fadeOut("fast", function() {
+                $(this).removeClass("live");
+
+                // Fade in the new content
+                $("#" + targetId).fadeIn("fast");
+                $("#" + targetId).addClass("live");
+            });
+
+            // Update the active menu item
+            menuLink.parent().find(".active").removeClass("active");
+            menuLink.addClass("active");
         }
-    })
-  
-    $("#menuPhoto").click(function() {
-      if ($(this) != $(this).parent().find(".active")) {
-        $("#content").find(".live").fadeOut("fast");
-        $("#content").find(".live").removeClass("live");
-        $("#photo").fadeIn("fast");
-        $("#photo").addClass("live");
-        $(this).parent().find(".active").removeClass("active");
-        $(this).addClass("active");
-      }
-    })
-  
-    $("#menuArt").click(function() {
-      if ($(this) != $(this).parent().find(".active")) {
-        $("#content").find(".live").fadeOut("fast");
-        $("#content").find(".live").removeClass("live");
-        $("#art").fadeIn("fast");
-        $("#art").addClass("live");
-        $(this).parent().find(".active").removeClass("active");
-        $(this).addClass("active");
-      }
-    })
-  
-    $("#waterfallPhotos").click(function() {
-      if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast", function() {
-          $("#content").find(".slideLive").removeClass("slideLive");
-          $("#fallsCarousel").fadeIn("fast");
-          $("#fallsCarousel").addClass("slideLive");
-          $(this).parent().find("li.active").removeClass("active");
-          $(this).addClass("active");
+    }
+
+    // Main menu navigation links
+    $("#menuAbout").click(function(e) { e.preventDefault(); switchContent("about", $(this)); });
+    $("#menuCode").click(function(e) { e.preventDefault(); switchContent("cs", $(this)); });
+    $("#menuPhoto").click(function(e) { e.preventDefault(); switchContent("photo", $(this)); });
+    $("#menuArt").click(function(e) { e.preventDefault(); switchContent("art", $(this)); });
+    $("#menuCV").click(function(e) { e.preventDefault(); switchContent("cv", $(this)); });
+
+    // Photo Gallery navigation links
+    // This logic is now purely for showing/hiding pre-existing HTML sections
+    $("#waterfallPhotos").click(function(e) {
+        e.preventDefault();
+        $(".photo-grid").hide();
+        $("#waterfallGrid").show();
+        $("#photo .nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+    $("#cafePhotos").click(function(e) {
+        e.preventDefault();
+        $(".photo-grid").hide();
+        $("#cafeGrid").show();
+        $("#photo .nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+    $("#concertPhotos").click(function(e) {
+        e.preventDefault();
+        $(".photo-grid").hide();
+        $("#concertGrid").show();
+        $("#photo .nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+    $("#japan2024Photos").click(function(e) {
+        e.preventDefault();
+        $(".photo-grid").hide();
+        $("#japan2024Grid").show();
+        $("#photo .nav-item").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+
+    // Sticky Sidebar Functionality
+    var sidebar = $("#sidebar");
+    if (sidebar.length) {
+        var stickyTop = sidebar.offset().top;
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= stickyTop) {
+                sidebar.addClass("sticky");
+            } else {
+                sidebar.removeClass("sticky");
+            }
         });
-      }
-    })
-  
-    $("#cafePhotos").click(function() {
-      if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast", function() {
-          $("#content").find(".slideLive").removeClass("slideLive");
-          $("#cafeCarousel").fadeIn("fast");
-          $("#cafeCarousel").addClass("slideLive");
-          $(this).parent().find("li.active").removeClass("active");
-          $(this).addClass("active");
-        });
-      }
-    })
-  
-    $("#concertPhotos").click(function() {
-      if ($(this) != $(this).parent().find(".slideLive")) {
-        $("#content").find(".slideLive").fadeOut("fast", function() {
-          $("#content").find(".slideLive").removeClass("slideLive");
-          $("#concertCarousel").fadeIn("fast");
-          $("#concertCarousel").addClass("slideLive");
-          $(this).parent().find("li.active").removeClass("active");
-          $(this).addClass("active");
-        });
-      }
-    })
-  
-     var sticky = $("#sidebar").offset.top;
-  
-     $("window").scroll(function() {
-      myFunction;
-     });
-  
-     function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        $("#sidebar").addClass("sticky");
-        console.log("sticky");
-      } else {
-        $("#sidebar").removeClass("sticky");
-      }
-    } 
-  });
+    }
+
+    // PDF viewer toolbar hiding
+    $('#cv-iframe').on('load', function() {
+        var iframeContents = $(this).contents();
+        var iframeHead = iframeContents.find('head');
+
+        if (iframeHead.find('#no-toolbar-style').length === 0) {
+            var style = $('<style id="no-toolbar-style">');
+            style.html(`
+                #toolbarContainer, #secondaryToolbar {
+                    display: none !important;
+                }
+                #viewerContainer {
+                    top: 0 !important;
+                }
+            `);
+            iframeHead.append(style);
+        }
+    });
+});
